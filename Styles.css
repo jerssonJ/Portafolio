@@ -22,7 +22,7 @@ section {
     padding: 10rem 9% 2rem;
 }
 html {
-    font-size: 62.5%;
+    font-size: 67.5%;
     overflow-x: hidden;
 }
 body {
@@ -122,5 +122,216 @@ span {
 .social-media a:hover {
     background: var(--main-color);
     color: var(--second-bg-color);
-    box-sizing: 0 0 1rem var(--main-color);
+    box-shadow: 0 0 1rem var(--main-color);
+}
+
+.btn {
+     display: inline-block;
+     padding: 1rem 2.8rem;
+     background: var(--main-color);
+     border-radius: 4rem;
+     box-shadow: 0 0 1rem var(--main-color);
+     font-size: 1.6rem;
+     color: var(--second-bg-color);
+     letter-spacing: .1rem;
+     font-weight: 600;
+     transition: .5s ease;
+}
+
+.btn:hover {
+    box-shadow: none;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background: var(--second-bg-color);
+}
+
+.about-img img {
+    width: 35vw;
+}
+
+.heading {
+    text-align: center;
+    font-size: 4.5rem;
+}
+
+.about-content h2 {
+    text-align: left;
+    line-height: 1.2;
+}
+
+.about-content h3 {
+    font-size: 2.6rem;
+}
+.about-content p{
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+}
+
+/* seccion de servicios*/
+
+.services h2 {
+    margin-bottom: 5rem;
+}
+.services-container {
+    display: table-cell ;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.services-container .services-box {
+    background: var(--second-bg-color);
+    padding: 4rem 4rem 5rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid var(--bg-color);
+    margin: 16px;
+    transition: .5s ease;
+}
+
+.services-container .services-box:hover {
+    border-color: var(--main-color);
+    transform: scale(1.02);
+}
+
+.services-container i {
+    font-size: 7rem;
+    color: var(--main-color);
+}
+
+.services-box h3 {
+    font-size: 2.6rem;
+}
+
+.services-box p {
+    font-size: 1.6rem;
+    margin: 1rem 0 3rem;
+}
+
+/*seccion de portafolio*/
+.portfolio {
+    background: var(--second-bg-color);
+}
+.portfolio h2 {
+    margin-bottom: 4rem;
+}
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.portfolio-box {
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--bg-color);
+    overflow: hidden;
+    display: flex;
+}
+
+.portfolio-box img {
+    width: 100%;
+    transition: .5s ease;
+}
+.portfolio-box:hover img {
+    transform: scale(1.1);
+}
+.portfolio-box .prtfolio-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.323), #282d32);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+
+.portfolio-box:hover .prtfolio-layer{
+    transform: translateY(0);
+} 
+
+.prtfolio-layer h4 {
+    font-size: 5rem;
+}
+.prtfolio-layer p {
+    font-size: 1.6rem;
+    margin: .3rem 0 1rem;
+}
+.prtfolio-layer a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 7rem;
+    height: 7rem;
+    background: var(--text-color);
+    border-radius: 50%;
+}
+.prtfolio-layer a i {
+    font-size: 2rem;
+    color: var(--second-bg-color);
+}
+
+/*seccion de contactos*/
+
+.contact h2 {
+    margin-bottom: 3rem;
+}
+
+.contact form {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact form .input-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea {
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: var(--second-bg-color);
+    border-radius: .8rem;
+    margin: .7rem 0;
+}
+
+.contact form .input-box input {
+    width: 49%;
+}
+
+.contact form textarea  {
+    resize: none;
+}
+
+/*footer*/
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background: var(--second-bg-color);
+}
+.footer-text p {
+    font-size: 1.6rem;
 }
