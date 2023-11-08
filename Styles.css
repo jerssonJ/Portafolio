@@ -280,10 +280,12 @@ span {
 
 .prtfolio-layer h4 {
     font-size: 5rem;
+    margin-bottom: 2rem;
 }
 .prtfolio-layer p {
     font-size: 1.6rem;
     margin: .3rem 0 1rem;
+    margin-bottom: 1rem;
 }
 .prtfolio-layer a{
     display: inline-flex;
