@@ -54,7 +54,7 @@ ScrollReveal().reveal('.home-content p, .about-content', { origin: 'rigth' });
 /**animacion texto */
 
 const typed = new Typed('.multiple-text', {
-    strings: ['Frontend Developer Junior.', 'Tecnico En Sistema.'],
+    strings: ['Front-end Developer Junior.', 'Tecnico En Sistema.'],
     typeSpeed:100,
     backSpeed:100,
     backDelay:1000,
